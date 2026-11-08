@@ -90,6 +90,12 @@ h2{font-size:clamp(40px,10vw,77px);margin-top:13px}
 .hardware-build{margin-top:10px;padding:17px;border:1px solid #b3b7a0;border-radius:6px;background:#f9f8f1}
 .hardware-build .eyebrow{color:var(--olive)}
 .hardware-build h3{font-size:27px;margin-top:8px;letter-spacing:-.045em}
+.hardware-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+.hardware-photos figure{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:4px}
+.hardware-photos img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.hardware-photos figcaption{padding:6px;font-size:8px}
+.hardware-prototype{grid-column:1/-1}
+.hardware-prototype img{aspect-ratio:4/3;object-position:center 60%}
 .hardware-build dl{margin:10px 0 0}
 .hardware-build dl div{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
 .hardware-build dt{font-weight:700}
