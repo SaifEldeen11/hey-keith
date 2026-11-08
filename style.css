@@ -79,6 +79,21 @@ h2{font-size:clamp(40px,10vw,77px);margin-top:13px}
 .reason-number{color:var(--olive);padding-top:4px}
 .reason h3{font-size:24px;line-height:1.08;letter-spacing:-.045em}
 .reason p{color:var(--muted);font-size:16px;margin-top:6px;max-width:66ch}
+.hardware{background:#eeeee2;border-top:1px solid var(--line);padding:49px 0 53px}
+.hardware-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:23px;border:1px solid #b3b7a0;border-radius:5px;background:#f9f8f1}
+.hardware-results div{min-width:0;padding:9px 6px 10px;text-align:center}
+.hardware-results div+div{border-left:1px solid #b3b7a0}
+.hardware-results strong,.hardware-results span{display:block}
+.hardware-results strong{font-size:clamp(21px,6.3vw,34px);line-height:1.06;letter-spacing:-.07em;color:var(--olive)}
+.hardware-results span{font-size:8px;margin-top:4px}
+.hardware-source{display:inline-flex;align-items:center;min-height:44px;color:var(--olive);font-size:9px;text-decoration:underline;text-underline-offset:3px}
+.hardware-build{margin-top:10px;padding:17px;border:1px solid #b3b7a0;border-radius:6px;background:#f9f8f1}
+.hardware-build .eyebrow{color:var(--olive)}
+.hardware-build h3{font-size:27px;margin-top:8px;letter-spacing:-.045em}
+.hardware-build dl{margin:10px 0 0}
+.hardware-build dl div{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
+.hardware-build dt{font-weight:700}
+.hardware-build dd{margin:0;color:var(--muted);font-size:15px}
 .memes{background:var(--dark);color:var(--paper);padding:49px 0 54px}
 .memes .eyebrow,.memes h2 span{color:var(--green)}
 .meme-grid{display:grid;gap:11px;margin-top:21px}
@@ -91,6 +106,7 @@ h2{font-size:clamp(40px,10vw,77px);margin-top:13px}
 .meme-line{font-weight:700;font-size:16px;line-height:1.35}
 .meme-line+.meme-line{margin-top:4px}
 .meme-line span{font-weight:400;color:#e1e2cf}
+.meme-range .meme-kicker{margin-bottom:10px}
 .diff{display:grid;gap:3px;margin:12px 0 13px;font-size:11px}
 .diff del{color:#f3a18d;text-decoration:none}
 .diff ins{color:var(--green);text-decoration:none}
@@ -134,9 +150,14 @@ h2{font-size:clamp(40px,10vw,77px);margin-top:13px}
  .reasons{margin-top:25px}
  .reason{grid-template-columns:55px 1fr;gap:13px;padding:19px 0}
  .reason h3{font-size:28px}
+ .hardware{padding:68px 0 73px}
+ .hardware-inner{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+ .hardware-build{margin-top:0;padding:23px}
+ .hardware-results span{font-size:10px}
  .memes{padding:68px 0 73px}
  .meme-grid{grid-template-columns:repeat(2,1fr);gap:15px}
  .meme{padding:22px}
+ .meme-range{grid-column:1/-1}
  .ask{padding:65px 0 60px}
  .sign-off{position:absolute;bottom:0;right:0}
  .work-links{grid-template-columns:repeat(3,1fr);gap:10px}
