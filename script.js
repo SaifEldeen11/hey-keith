@@ -1,15 +1,18 @@
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const product = document.querySelector('[data-draw]');
 
 if ('IntersectionObserver' in window && !motion.matches) {
-  product.classList.add('draw-pending');
-  const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) {
-      product.classList.add('draw-active');
-      observer.disconnect();
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('draw-active');
+        observer.unobserve(entry.target);
+      }
     }
   }, { threshold: 0.26 });
-  observer.observe(product);
+  for (const figure of document.querySelectorAll('[data-draw]')) {
+    figure.classList.add('draw-pending');
+    observer.observe(figure);
+  }
 }
 
 let scheduled = false;

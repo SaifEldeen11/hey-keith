@@ -96,6 +96,12 @@ h2{font-size:clamp(40px,10vw,77px);margin-top:13px}
 .hardware-photos figcaption{padding:6px;font-size:8px}
 .hardware-prototype{grid-column:1/-1}
 .hardware-prototype img{aspect-ratio:4/3;object-position:center 60%}
+.hardware-team{grid-column:1/-1}
+.team-photo{position:relative}
+.team-photo img{aspect-ratio:1050/701}
+.team-label{position:absolute;top:4%;right:3%;z-index:1;padding:2px 5px;border:1px solid var(--ink);border-radius:3px;background:var(--green);color:var(--ink);font-size:8px}
+.team-crown{fill:#fbd44e;stroke:var(--ink);stroke-width:1.4;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.team-photo .arrows path{stroke:var(--green);filter:drop-shadow(0 0 1px var(--ink))}
 .hardware-build dl{margin:10px 0 0}
 .hardware-build dl div{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
 .hardware-build dt{font-weight:700}
